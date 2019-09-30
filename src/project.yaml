@@ -9,6 +9,16 @@ src_files:
     library: work
     entity_names:
       - random_generator
+  - file_name: pmodda3_controller.vhd
+    language: vhdl
+    library: work
+    entity_names:
+      - pmodda3_controller
+  - file_name: papilio_wrapper.vhd
+    language: vhdl
+    library: work
+    entity_names:
+      - papilio_wrapper
 
 test_files:
   - file_name: test_clock_divider.vhd
@@ -17,10 +27,13 @@ test_files:
   - file_name: test_random_generator.vhd
     entity_names:
       - test_random_generator
+  - file_name: test_papilio_wrapper.vhd
+    entity_names:
+      - test_papilio_wrapper
 
 ucf_file: papilio.ucf
 
-top_module: clock_divider
+top_module: papilio_wrapper
 
 part:
   device: xc6slx9

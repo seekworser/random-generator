@@ -33,11 +33,11 @@ NET A(0)           LOC="P48"  | IOSTANDARD=LVTTL;                               
 NET A(1)           LOC="P51"  | IOSTANDARD=LVTTL;                                # A1
 NET A(2)           LOC="P56"  | IOSTANDARD=LVTTL;                                # A2
 NET A(3)           LOC="P58"  | IOSTANDARD=LVTTL;                                # A3
-NET A(4)           LOC="P61"  | IOSTANDARD=LVTTL;                                # A4
-NET A(5)           LOC="P66"  | IOSTANDARD=LVTTL;                                # A5
-NET A(6)           LOC="P67"  | IOSTANDARD=LVTTL;                                # A6
-NET A(7)           LOC="P75"  | IOSTANDARD=LVTTL;                                # A7
-NET A(8)           LOC="P79"  | IOSTANDARD=LVTTL;                                # A8
+# NET A(4)           LOC="P61"  | IOSTANDARD=LVTTL;                                # A4
+# NET A(5)           LOC="P66"  | IOSTANDARD=LVTTL;                                # A5
+# NET A(6)           LOC="P67"  | IOSTANDARD=LVTTL;                                # A6
+# NET A(7)           LOC="P75"  | IOSTANDARD=LVTTL;                                # A7
+# NET A(8)           LOC="P79"  | IOSTANDARD=LVTTL;                                # A8
 # NET A(9)           LOC="P81"  | IOSTANDARD=LVTTL;                                # A9
 # NET A(10)          LOC="P83"  | IOSTANDARD=LVTTL;                                # A10
 # NET A(11)          LOC="P85"  | IOSTANDARD=LVTTL;                                # A11
