@@ -4,11 +4,19 @@ src_files:
     library: work
     entity_names:
       - clock_divider
+  - file_name: random_generator.vhd
+    language: vhdl
+    library: work
+    entity_names:
+      - random_generator
 
 test_files:
   - file_name: test_clock_divider.vhd
     entity_names:
       - test_clock_divider
+  - file_name: test_random_generator.vhd
+    entity_names:
+      - test_random_generator
 
 ucf_file: papilio.ucf
 
