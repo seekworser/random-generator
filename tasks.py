@@ -3,7 +3,7 @@ import invoke
 
 
 def get_project_parameter(*keys):
-    param = yaml.load(open(PROJECT_YAML_FILE_NAME, "r+"))
+    param = yaml.load(open(PROJECT_YAML_FILE_NAME, "r+"), Loader=yaml.SafeLoader)
     for item in keys:
         param = param[item]
     return param
@@ -174,7 +174,7 @@ def ghdl_test_runner(c, entity_name):
     return
 
 def ghdl_clean(c):
-    c.run("rm {testdir:s}*.o {testdir:s}*.cf".format(testdir=TESTDIR))
+    c.run("rm {testdir:s}*.o {testdir:s}*.cf".format(testdir=TESTDIR), warn=True)
 
 @invoke.task(iterable=["entity_name"])
 def test(c, entity_name):

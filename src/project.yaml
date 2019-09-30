@@ -1,19 +1,18 @@
 src_files:
-  - file_name: sample.vhd
+  - file_name: clock_divider.vhd
     language: vhdl
     library: work
     entity_names:
-      - sample
+      - clock_divider
 
 test_files:
-  - file_name: test_sample.vhd
+  - file_name: test_clock_divider.vhd
     entity_names:
-      - test_sample
-      - test_sample2
-  
-ucf_file: sample_ucf.ucf
+      - test_clock_divider
 
-top_module: sample
+ucf_file: papilio.ucf
+
+top_module: clock_divider
 
 part:
   device: xc6slx9
