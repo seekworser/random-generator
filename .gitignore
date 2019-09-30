@@ -1,0 +1,11 @@
+*.bit
+*.log
+*.lst
+*.ncd
+*_pad.csv
+*.ngc
+*.ngd
+*.pcf
+test/*
+!test/.keep
+*.o
