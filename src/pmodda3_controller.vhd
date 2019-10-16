@@ -21,13 +21,13 @@ begin
     sclk <= clock;
     count: process(clock) begin
         if falling_edge(clock) then
-            if counter = 15 then
+            if counter = 16 then
                 counter <= counter + 1;
                 cs <= '1';
                 din <= '0';
                 ldac <= '1';
                 data_bit <= random;
-            elsif counter = 16 then
+            elsif counter = 17 then
                 counter <= 0;
                 cs <= '1';
                 din <= '0';
