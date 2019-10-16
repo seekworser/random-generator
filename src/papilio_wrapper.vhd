@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity papilio_wrapper is
     port (
         clk: in std_logic;
-        a: out std_logic_vector(3 downto 0)
+        c: out std_logic_vector(3 downto 0)
     );
 end papilio_wrapper;
 
@@ -57,9 +57,9 @@ begin
         port map(
             clock => slow_clock,
             random => random,
-            sclk => a(3),
-            cs => a(0),
-            din => a(1),
-            ldac => a(2)
+            sclk => c(0),
+            cs => c(3),
+            din => c(2),
+            ldac => c(1)
         );
 end behavior;

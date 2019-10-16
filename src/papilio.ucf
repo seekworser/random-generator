@@ -29,10 +29,10 @@ CONFIG PROHIBIT=P60;
 NET CLK            LOC="P94"  | IOSTANDARD=LVTTL | PERIOD=31.25ns;               # CLK
 # NET RX             LOC="P101" | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST;          # RX
 # NET TX             LOC="P105" | IOSTANDARD=LVTTL | DRIVE=8 | SLEW=FAST | PULLUP; # TX
-NET A(0)           LOC="P48"  | IOSTANDARD=LVTTL;                                # A0
-NET A(1)           LOC="P51"  | IOSTANDARD=LVTTL;                                # A1
-NET A(2)           LOC="P56"  | IOSTANDARD=LVTTL;                                # A2
-NET A(3)           LOC="P58"  | IOSTANDARD=LVTTL;                                # A3
+# NET A(0)           LOC="P48"  | IOSTANDARD=LVTTL;                                # A0
+# NET A(1)           LOC="P51"  | IOSTANDARD=LVTTL;                                # A1
+# NET A(2)           LOC="P56"  | IOSTANDARD=LVTTL;                                # A2
+# NET A(3)           LOC="P58"  | IOSTANDARD=LVTTL;                                # A3
 # NET A(4)           LOC="P61"  | IOSTANDARD=LVTTL;                                # A4
 # NET A(5)           LOC="P66"  | IOSTANDARD=LVTTL;                                # A5
 # NET A(6)           LOC="P67"  | IOSTANDARD=LVTTL;                                # A6
@@ -61,10 +61,10 @@ NET A(3)           LOC="P58"  | IOSTANDARD=LVTTL;                               
 # NET B(13)          LOC="P55"  | IOSTANDARD=LVTTL;                                # B13
 # NET B(14)          LOC="P50"  | IOSTANDARD=LVTTL;                                # B14
 # NET B(15)          LOC="P47"  | IOSTANDARD=LVTTL;                                # B15
-# NET C(0)           LOC="P114" | IOSTANDARD=LVTTL;                                # C0
-# NET C(1)           LOC="P115" | IOSTANDARD=LVTTL;                                # C1
-# NET C(2)           LOC="P116" | IOSTANDARD=LVTTL;                                # C2
-# NET C(3)           LOC="P117" | IOSTANDARD=LVTTL;                                # C3
+NET C(0)           LOC="P114" | IOSTANDARD=LVTTL;                                # C0
+NET C(1)           LOC="P115" | IOSTANDARD=LVTTL;                                # C1
+NET C(2)           LOC="P116" | IOSTANDARD=LVTTL;                                # C2
+NET C(3)           LOC="P117" | IOSTANDARD=LVTTL;                                # C3
 # NET C(4)           LOC="P118" | IOSTANDARD=LVTTL;                                # C4
 # NET C(5)           LOC="P119" | IOSTANDARD=LVTTL;                                # C5
 # NET C(6)           LOC="P120" | IOSTANDARD=LVTTL;                                # C6

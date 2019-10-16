@@ -11,7 +11,7 @@ end random_generator;
 
 architecture behavior of random_generator is
     constant a: integer := 48271;
-    constant b: integer := 400;
+    constant b: integer := 0;
     constant m: integer := 65535;
     signal r: integer range 0 to 65535 := 1;
 begin

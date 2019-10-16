@@ -9,16 +9,16 @@ architecture behavior of test_papilio_wrapper is
     component papilio_wrapper is
         port (
             clk: in std_logic;
-            a: out std_logic_vector(3 downto 0)
+            c: out std_logic_vector(3 downto 0)
         );
     end component;
     signal clk: std_logic;
-    signal a: std_logic_vector(3 downto 0);
+    signal c: std_logic_vector(3 downto 0);
 begin
     u1: papilio_wrapper
         port map(
             clk => clk,
-            a => a
+            c => c
         );
     process
     begin
