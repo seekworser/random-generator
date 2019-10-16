@@ -15,18 +15,23 @@ entity pmodda3_controller is
 end pmodda3_controller;
 
 architecture behavior of pmodda3_controller is
-    signal counter: integer range 0 to 16;
+    signal counter: integer range 0 to 17;
     signal data_bit: std_logic_vector(15 downto 0) := (others => '0');
 begin
     sclk <= clock;
     count: process(clock) begin
-        if rising_edge(clock) then
-            if counter = 16 then
+        if falling_edge(clock) then
+            if counter = 15 then
+                counter <= counter + 1;
+                cs <= '1';
+                din <= '0';
+                ldac <= '1';
+                data_bit <= random;
+            elsif counter = 16 then
                 counter <= 0;
                 cs <= '1';
                 din <= '0';
                 ldac <= '0';
-                data_bit <= random;
             else
                 counter <= counter + 1;
                 cs <= '0';

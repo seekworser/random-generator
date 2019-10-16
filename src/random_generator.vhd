@@ -43,5 +43,5 @@ begin
             clock => clock,
             random => random_32
         );
-    random <= random_32(15 downto 0);
+    random(15 downto 0) <= random_32(31 downto 16);
 end behavior;
