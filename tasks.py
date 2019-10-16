@@ -159,11 +159,12 @@ def gdhl_compile(c, file_name, entity_names):
             srcdir=SRCDIR,
             file_name=file_name,
         ))
-        for entity_name in entity_names:
-            c.run("ghdl -e --ieee=synopsys {entity_name:s}".format(
-                srcdir=SRCDIR,
-                entity_name=entity_name,
-            ))
+        if entity_names:
+            for entity_name in entity_names:
+                c.run("ghdl -e --ieee=synopsys {entity_name:s}".format(
+                    srcdir=SRCDIR,
+                    entity_name=entity_name,
+                ))
     return
 
 def ghdl_test_runner(c, entity_name):
@@ -174,7 +175,7 @@ def ghdl_test_runner(c, entity_name):
     return
 
 def ghdl_clean(c):
-    c.run("rm {testdir:s}*.o {testdir:s}*.cf".format(testdir=TESTDIR), warn=True)
+    c.run("rm {testdir:s}*.o {testdir:s}*.cf {srcdir:s}*.cf".format(testdir=TESTDIR, srcdir=SRCDIR), warn=True)
 
 @invoke.task(iterable=["entity_name"])
 def test(c, entity_name):

@@ -1,9 +1,18 @@
 src_files:
+  - file_name: common.vhd
+    language: vhdl
+    library: work
+    entity_names:
   - file_name: clock_divider.vhd
     language: vhdl
     library: work
     entity_names:
       - clock_divider
+  - file_name: tinymt32.vhd
+    language: vhdl
+    library: work
+    entity_names:
+      - tinymt32
   - file_name: random_generator.vhd
     language: vhdl
     library: work
@@ -24,6 +33,9 @@ test_files:
   - file_name: test_clock_divider.vhd
     entity_names:
       - test_clock_divider
+  - file_name: test_tinymt32.vhd
+    entity_names:
+      - test_tinymt32
   - file_name: test_random_generator.vhd
     entity_names:
       - test_random_generator
