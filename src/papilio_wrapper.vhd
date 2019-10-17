@@ -43,7 +43,7 @@ begin
     u1: clock_divider
         generic map(
             clock_frequency => 32000000,
-            slow_clock_frequency => 16000000
+            slow_clock_frequency => 1600000
         )
         port map(
             clock => clk,
